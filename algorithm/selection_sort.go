@@ -17,6 +17,9 @@ func sortSelection(nums []int) {
             if nums[min] > nums[j] {     // если больше, то меняем значение минимального
                 min = j
             }
+        }
+        
+        if min != i {                    // если не совпадают 
             temp := nums[i]
             nums[i] = nums[min]          // здесь меняем местами элементы
             nums[min] = temp
