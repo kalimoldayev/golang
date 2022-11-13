@@ -8,10 +8,10 @@ func main() {
     list.prepend(18)
     list.prepend(19)
 
-    list2.appendList(21)
-    list2.appendList(22)
-    list2.appendList(23)
-    list2.appendList(24)
+    list2.append(21)
+    list2.append(22)
+    list2.append(23)
+    list2.append(24)
     list2.printList()
 
     list2.deleteNodeByValue(24)
@@ -38,7 +38,7 @@ func (l *linkedList) prepend (val int) {  // функция которая от�
     l.length++         // длина для итерации
 }
 
-func (l *linkedList) appendList (val int) { // добавляет в rjytw
+func (l *linkedList) append (val int) { // добавляет в конец
     newNode := node{data: val} // создаю новую ноду
     length := l.length // для итерации
     currentNode := l.head // текущая нода
